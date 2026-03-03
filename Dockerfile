@@ -15,24 +15,21 @@ RUN pnpm install --frozen-lockfile
 # Copy the rest of the application
 COPY . .
 
-# Build the Nuxt application
-RUN pnpm run build
+# Generate the static application (SSG)
+RUN pnpm run generate
 
 # Production stage
-FROM node:20-alpine
+FROM nginx:alpine
 
-WORKDIR /app
+# Remove default nginx static assets
+RUN rm -rf /usr/share/nginx/html/*
 
-# Set appropriate environment variables
-ENV NODE_ENV=production
-ENV PORT=3001
-ENV HOST=0.0.0.0
+# Copy the generated static output to the Nginx html folder
+COPY --from=builder /app/.output/public /usr/share/nginx/html
 
-# Copy the built output from the builder stage
-COPY --from=builder /app/.output ./.output
+# Copy a basic Nginx configuration if needed, or stick to the default one which listens on 80.
+# Expose port 80
+EXPOSE 80
 
-# Expose the application port
-EXPOSE 3001
-
-# Start the Nuxt 3 server
-CMD ["node", ".output/server/index.mjs"]
+# Start Nginx
+CMD ["nginx", "-g", "daemon off;"]
