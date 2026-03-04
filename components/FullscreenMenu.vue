@@ -1,14 +1,14 @@
 <template>
   <Transition name="menu">
-    <div v-show="isOpen" class="fixed inset-0 z-[70] flex flex-col bg-background-light dark:bg-background-dark text-slate-900 dark:text-white overflow-hidden">
+    <div v-show="isOpen" class="fixed inset-0 z-[70] flex flex-col bg-background-light dark:bg-background-dark text-slate-900 dark:text-white overflow-hidden" style="zoom: 0.8;">
       
       <!-- Top Header for Menu -->
       <header class="flex items-center justify-between p-6">
         <div class="flex items-center gap-2">
-          <div class="size-8 rounded-full bg-slate-900 dark:bg-white flex items-center justify-center">
-            <span class="material-symbols-outlined text-white dark:text-slate-900 text-[20px]">code</span>
-          </div>
-          <span class="font-bold tracking-tight text-lg">MF.</span>
+          <div class="size-8 rounded-full bg-slate-900 dark:bg-white flex items-center justify-center overflow-hidden">
+          <img src="/favicon.png" alt="Logo" class="w-full h-full object-cover" />
+        </div>
+          <span class="font-bold tracking-tight text-lg">HI.</span>
         </div>
         <button @click="$emit('close')" class="hover:text-slate-500 transition-colors z-10 flex items-center justify-center w-10 h-10 rounded-full bg-neutral-100 dark:bg-neutral-800">
           <span class="material-symbols-outlined text-2xl">close</span>

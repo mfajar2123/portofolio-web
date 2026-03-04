@@ -7,7 +7,7 @@
       "Computer Engineering",
       "Web App Developer"
     ],
-    "bio": "I am a Computer Engineering fresh graduate specializing in software development. Experience in building REST APIs, microservices, and front-end technologies.",
+    "bio": "I am a Computer Engineering graduate specializing in Fullstack Development and DevOps. I build scalable RESTful APIs and modern UIs, with a focus on CI/CD, containerization, and cloud infrastructure for seamless software delivery.",
     "location": "Sukabumi, West Java, Indonesia",
     "contacts": [
       {
@@ -45,7 +45,7 @@
         "duration": "9 months",
         "location": "South Jakarta",
         "details": [
-          "Building and maintaining enterprise web applications."
+          "Building and maintaining web applications."
         ]
       },
       {
@@ -111,8 +111,9 @@
         "title": "Frontend",
         "icon": "code",
         "items": [
-          "JavaScript",
-          "React.js",
+          "Nuxt.js",
+          "Vue.js",
+          "Tailwind CSS",
           "Bootstrap",
           "jQuery"
         ]
@@ -136,7 +137,8 @@
         "icon": "bolt",
         "items": [
           "WordPress",
-          "Troubleshooting"
+          "Troubleshooting",
+          "Graphic Designer"
         ]
       }
     ]
@@ -150,11 +152,14 @@
       }
     ],
     "certifications": [
+      "Docker: Beginner to Advanced",
+      "Vue.JS: Beginner to Advanced",
       "MikroTik Certified Network Associate",
       "Belajar Dasar Pemrograman JavaScript",
       "Introduction to Containers w/ Docker, Kubernetes & OpenShift",
       "IC3 Digital Literacy Certification GS6 Level 1",
-      "Introduction to Software Engineering (with Honors)"
+      "IBM Back-end JavaScript Developer Specialization",
+      "PTESOL (Proficiency Test of English to Speakers of Other Languages)"
     ]
   },
   "footer": {

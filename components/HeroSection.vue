@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col justify-center px-6 min-h-[90vh] relative overflow-hidden">
+  <section class="flex flex-col justify-center px-6 min-h-[90vh] relative overflow-hidden" style="zoom: 0.8;">
     <!-- Huge Background Pattern / Noise -->
     <div class="absolute inset-0 pointer-events-none opacity-10 z-0">
       <div class="absolute right-0 top-0 h-[800px] w-[800px] bg-gradient-to-b from-neutral-200 to-transparent dark:from-neutral-800 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
