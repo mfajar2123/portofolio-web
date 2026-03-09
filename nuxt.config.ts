@@ -15,11 +15,12 @@ export default defineNuxtConfig({
 
   googleFonts: {
     families: {
-      'Space+Grotesk': [300, 400, 500, 600, 700, 800, 900],
-      'Inter': [300, 400, 500, 600, 700]
+      'Space+Grotesk': [400, 700, 900],
+      'Inter': [400, 500, 700]
     },
     display: 'swap',
-    download: true
+    download: true,
+    inject: true
   },
 
   css: [
