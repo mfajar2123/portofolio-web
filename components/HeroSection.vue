@@ -39,7 +39,7 @@
         <!-- Giant Portrait Image -->
         <div class="gsap-image w-full lg:w-1/2 xl:w-2/3 h-[50vh] lg:h-[600px] relative rounded-3xl overflow-hidden group">
           <div class="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors duration-700 z-10"></div>
-          <nuxt-img :src="heroData.image" alt="Portrait" class="h-full w-full object-cover grayscale opacity-80 group-hover:scale-105 group-hover:grayscale-0 transition-all duration-[1s] ease-out origin-bottom" />
+          <nuxt-img :src="heroData.image" alt="Portrait" class="h-full w-full object-cover grayscale opacity-80 group-hover:scale-105 group-hover:grayscale-0 transition-all duration-[1s] ease-out origin-bottom" preload fetchpriority="high" />
         </div>
       </div>
     </div>
