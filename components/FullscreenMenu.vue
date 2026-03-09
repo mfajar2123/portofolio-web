@@ -6,7 +6,7 @@
       <header class="flex items-center justify-between p-6">
         <div class="flex items-center gap-2">
           <div class="size-8 rounded-full bg-slate-900 dark:bg-white flex items-center justify-center overflow-hidden">
-          <img src="/favicon.png" alt="Logo" class="w-full h-full object-cover" />
+          <nuxt-img src="/favicon.png" alt="Logo" class="w-full h-full object-cover" />
         </div>
           <span class="font-bold tracking-tight text-lg">HI.</span>
         </div>
@@ -43,7 +43,7 @@
         <div class="hidden lg:flex flex-1 relative h-full p-6">
           <div class="w-full h-full rounded-3xl overflow-hidden relative">
             <div class="absolute inset-0 bg-neutral-900/20 z-10 mix-blend-multiply dark:mix-blend-overlay"></div>
-            <img 
+            <nuxt-img 
               :src="heroData.image" 
               alt="Portrait" 
               class="menu-image h-full w-full object-cover grayscale opacity-90 scale-105" 

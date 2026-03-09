@@ -4,7 +4,7 @@
     <header class="fixed top-0 left-0 right-0 z-[60] flex items-center justify-between p-6 backdrop-blur-md bg-background-light/80 dark:bg-background-dark/80 border-b border-neutral-200 dark:border-neutral-800 transition-transform duration-300">
       <div class="flex items-center gap-2">
         <div class="size-8 rounded-full bg-slate-900 dark:bg-white flex items-center justify-center overflow-hidden">
-          <img src="/favicon.png" alt="Logo" class="w-full h-full object-cover" />
+          <nuxt-img src="/favicon.png" alt="Logo" class="w-full h-full object-cover" />
         </div>
         <span class="text-slate-900 dark:text-white font-bold tracking-tight text-lg">HI.</span>
       </div>

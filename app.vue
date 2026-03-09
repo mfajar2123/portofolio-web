@@ -31,6 +31,9 @@ useHead({
   meta: [
     { name: 'author', content: `${portfolioData.hero.firstName} ${portfolioData.hero.lastName}` },
     { name: 'keywords', content: 'Portfolio, Muhamad Fajar, Web App Developer, Computer Engineering, Vue, Nuxt 3' }
+  ],
+  link: [
+    { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap' }
   ]
 })
 </script>
